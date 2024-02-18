@@ -1,0 +1,16 @@
+.menu {
+  display: flex;
+  list-style: none;
+  font-size: 30px;
+  background-color: rgb(206, 171, 171);
+}
+.link {
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.link:global(.active) {
+  color: rgb(77, 165, 42);
+}
+.hr {
+  width: 100%;
+}

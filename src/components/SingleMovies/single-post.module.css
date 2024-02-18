@@ -1,0 +1,14 @@
+.buttonback {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+  /*
+  left: 20px; 
+  top: 100px;
+  transform: translateY(-50%); */
+}
+.divblock {
+  display: inline-flex;
+}
