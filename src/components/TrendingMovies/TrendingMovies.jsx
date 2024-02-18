@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getTrendingMovies } from "../../api/postmovie";
-// import styles from "./trending-movies.module.css";
+import styles from "./trending-movies.module.css";
 import { Link, useLocation } from "react-router-dom";
 
 const TrendingMovies = () => {
@@ -26,12 +26,12 @@ const TrendingMovies = () => {
 
   return (
     <div>
-      <h1>Trending Today</h1>
+      <h1 className={styles.textLeft}>Trending Today</h1>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
       <ul>
         {trendingMovies.map((movie) => (
-          <li key={movie.id}>
+          <li className={styles.textLeft} key={movie.id}>
             <Link to={`/movies/${movie.id}`} state={{ from: location }}>
               {movie.title}
             </Link>

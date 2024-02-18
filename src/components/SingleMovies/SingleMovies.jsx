@@ -61,22 +61,23 @@ const SingleMovies = () => {
                 alt={movies.title}
               />
             </div>
-            <div>
+            <div className={styles.textLeft}>
               <h1 className={styles.singlepost}>{movies.title}</h1>
               <p>User Score: {Math.floor(movies.popularity)}%</p>
 
               <h3>Overview</h3>
               <p>{movies.overview}</p>
               <h4>Genres</h4>
-
               <ul>
                 {movies.genres.map((genres) => (
-                  <li key={genres.id}>{genres.name}</li>
+                  <li className={styles.genres} key={genres.id}>
+                    {genres.name}
+                  </li>
                 ))}
               </ul>
             </div>
           </div>
-          <div>
+          <div className={styles.textLeft}>
             <hr />
             <h2> Information</h2>
             <ul>

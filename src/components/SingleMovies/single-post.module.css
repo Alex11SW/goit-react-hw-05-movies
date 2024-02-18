@@ -12,3 +12,10 @@
 .divblock {
   display: inline-flex;
 }
+.genres {
+  list-style: none;
+}
+.textLeft {
+  text-align: left;
+  margin-left: 20px;
+}

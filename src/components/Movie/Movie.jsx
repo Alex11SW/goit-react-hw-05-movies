@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { searchMovies } from "../../api/postmovie.js";
 import Button from "../Button/Button.jsx";
-import MovieList from "../MovieList/MovieLest.jsx";
+import MovieList from "../MovieList/MovieList.jsx";
 
 const Movie = () => {
   // const [search, setSearch] = useState("");
